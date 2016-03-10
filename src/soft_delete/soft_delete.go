@@ -1,7 +1,7 @@
 package main
 
 import (
-	"genetics_loader/driver/database"
+	"soft_delete/driver/database"
 	//"github.com/codegangsta/cli"
 	"encoding/csv"
 	"errors"
@@ -9,9 +9,9 @@ import (
 	jp "github.com/dustin/go-jsonpointer"
 	"io"
 	"log"
-	"newtopia/models"
 	"os"
 	"path/filepath"
+	"soft_delete/models"
 	"strings"
 )
 

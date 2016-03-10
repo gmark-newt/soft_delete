@@ -2,10 +2,10 @@ package database
 
 import (
 	"fmt"
-	"genetics_loader/configuration"
 	"github.com/dabfleming/gorm"
 	_ "github.com/lib/pq"
 	"log"
+	"soft_delete/configuration"
 )
 
 // TODO Rename this connection "Intake" for clarity?
