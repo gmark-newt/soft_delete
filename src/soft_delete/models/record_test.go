@@ -2,7 +2,7 @@ package models
 
 import (
 	"encoding/json"
-	"newtopia/driver/database"
+	"soft_delete/driver/database"
 	"testing"
 )
 

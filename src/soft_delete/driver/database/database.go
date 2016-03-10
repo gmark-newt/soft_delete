@@ -8,23 +8,23 @@ import (
 	"soft_delete/configuration"
 )
 
-// TODO Rename this connection "Intake" for clarity?
-var DB *gorm.DB
+/// TODO Rename this connection "Intake" for clarity?
+//var DB *gorm.DB
 var App *gorm.DB
 
 // Connection URL in the format used by github.com/mattes/migrate/migrate
 var ConnectionURL string
 
 func init() {
-	var dbConnection, appDBConnection gorm.DB
+	var appDBConnection gorm.DB
 	var config *configuration.Configuration
 
 	config = configuration.GetConfiguration()
 
-	ConnectionURL = getConnectionURL(config.Database)
+	ConnectionURL = getConnectionURL(config.AppDatabase)
 
-	dbConnection = connect(config.Database)
-	DB = &dbConnection
+	//dbConnection = connect(config.Database)
+	//DB = &dbConnection
 
 	appDBConnection = connect(config.AppDatabase)
 	App = &appDBConnection

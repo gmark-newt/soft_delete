@@ -1,7 +1,7 @@
 package models
 
 import (
-	"newtopia/driver/database"
+	"soft_delete/driver/database"
 	"testing"
 )
 

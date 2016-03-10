@@ -4,8 +4,8 @@ import (
 	"bitbucket.org/newtopia2014/go-uuid/uuid"
 	"database/sql/driver"
 	"encoding/json"
-	"newtopia/driver/database"
-	"newtopia/log"
+	"log"
+	"soft_delete/driver/database"
 	"time"
 )
 

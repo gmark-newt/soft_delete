@@ -2,7 +2,7 @@ package models
 
 import (
 	"github.com/dabfleming/gorm"
-	"newtopia/driver/database"
+	"soft_delete/driver/database"
 	"testing"
 )
 

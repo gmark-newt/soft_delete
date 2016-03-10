@@ -11,8 +11,8 @@ type Configuration struct {
 	Environment string `json:"environment"`
 	Home        string `json:"home"`
 
-	Debug       bool                   `json:"debug_mode"`
-	Database    map[string]interface{} `json:"database_int"`
+	Debug bool `json:"debug_mode"`
+	//Database    map[string]interface{} `json:"database_int"`
 	AppDatabase map[string]interface{} `json:"database_app"`
 }
 
