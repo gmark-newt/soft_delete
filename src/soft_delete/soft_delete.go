@@ -16,11 +16,11 @@ import (
 )
 
 type QuitRecord struct {
-	FirstName   string `json:"-"` //col 0
-	LastName    string `json:"-"` //col 1
-	Email       string `json:"-"` //col 2
-	Company     string `json:"-"` //col 3
-	SoftDeleted string `json:"-"` //col 4
+	FirstName string `json:"-"` //col 0
+	LastName  string `json:"-"` //col 1
+	Email     string `json:"-"` //col 2
+	Company   string `json:"-"` //col 3
+	//SoftDeleted string `json:"-"` //col 4
 }
 
 func main() {
@@ -70,11 +70,11 @@ func softDeleteQuitList(filename string) (err error) {
 		}
 
 		qRecord = QuitRecord{
-			FirstName:   row[0],
-			LastName:    row[1],
-			Email:       row[2],
-			Company:     row[3],
-			SoftDeleted: row[4],
+			FirstName: row[0],
+			LastName:  row[1],
+			Email:     row[2],
+			Company:   row[3],
+			//SoftDeleted: row[4],
 		}
 
 		// Begin TXs
